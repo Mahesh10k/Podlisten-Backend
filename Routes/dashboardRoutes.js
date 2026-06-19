@@ -29,7 +29,7 @@ router.delete("/podcasts", authentication, deletePodcast)
 
 router.get("/users", authentication, getUsers);
 
-router.post("/users", createUser);
+router.post("/users/", createUser);
 
 router.post("/login", loginUser);
 
