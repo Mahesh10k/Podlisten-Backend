@@ -10,7 +10,7 @@ connectDB()
 app.use(express.json())
 
 
-var whitelist = ['https://pod-listen.vercel.app', 'http://localhost:5173',"https://podlisten-podcasts.vercel.app"]
+var whitelist = ['https://pod-listen.vercel.app', 'http://localhost:5173',"https://podlisten-podcasts.vercel.app","https://podlisten-podcasts.netlify.app/"]
 var corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1) {
